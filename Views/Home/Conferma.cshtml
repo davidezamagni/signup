@@ -1,0 +1,12 @@
+@model Prenotazione;
+
+@{
+    ViewData["Title"] = "Conferma";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+@if(Model != null){
+    <p>La prenotazione è stat effettuata da @Model.Nome, @Model.Cognome</p>
+}
+</div>

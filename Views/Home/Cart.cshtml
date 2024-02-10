@@ -1,0 +1,24 @@
+@model List<Prodotto>;
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome </th>
+            <br>
+            <th>Quantità </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach(var item in Model){
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Quantità</td>
+                </tr>                
+            }
+        }
+    </tbody>
+</table>
